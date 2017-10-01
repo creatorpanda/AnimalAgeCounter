@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AAC</title>
+	<style>
+	#table{margin-top: 2cm;}
+	body {background-color: pink;}
+	</style>
+</head>
+<body>
+
+
+
+<CENTER>
+<h3 id="table">Animal Age Calculator</h3>
+(how old whould my pet be if it was a human?)<br><br><br>
+<b>Age</b> (years)<br>
+<input type="number" id="age" value="0"><br><br>
+<b>Weight</b> (kg)<br>
+<input type="number" id="weight" value="0"><br><br>
+
+<button onclick="dogfunc()"><b>Dog Calculator</b></button><br><br>
+<button onclick="catfunc()"><b>Cat Calculator</b></button><br>
+
+<p id="announcer"></p>
+</CENTER>
+
+
+
+<script>
+function catfunc() {
+    var agereader = document.getElementById("age").value;
+	
+	if(agereader==1){document.getElementById("announcer").innerHTML ="Cat age: 15";}
+		if((agereader>=2)&&(agereader<=16)){
+		letrick=(24+4*(agereader-2));
+		document.getElementById("announcer").innerHTML ="Cat age: "+letrick;}
+		if(agereader==17){document.getElementById("announcer").innerHTML ="Cat age: 83";}
+		if(agereader==18){document.getElementById("announcer").innerHTML ="Cat age: 89";}
+		if(agereader==19){document.getElementById("announcer").innerHTML ="Cat age: 92";}
+		if(agereader==20){document.getElementById("announcer").innerHTML ="Cat age: 96";}
+		if(agereader==21){document.getElementById("announcer").innerHTML ="Cat age: 98";}
+		if(agereader==22){document.getElementById("announcer").innerHTML ="Cat age: 101";}
+		if(agereader==23){document.getElementById("announcer").innerHTML ="Cat age: 104";}
+		if(agereader==24){document.getElementById("announcer").innerHTML ="Cat age: 107";}
+		if((agereader<0)||(agereader>24)){document.getElementById("announcer").innerHTML ="Cannot calculate";}	
+	}
+</script>
+
+<script>
+function dogfunc() {
+    var agereader = document.getElementById("age").value;
+	var baros = document.getElementById("weight").value;
+	
+if ((baros>=1)&&(baros<=10)){
+	if((agereader>=1)&&(agereader<=20)){
+	letrick=(20+4*(agereader-1));
+	document.getElementById("announcer").innerHTML ="Dog age: "+letrick;}
+	if((agereader<0)||(agereader>20)){document.getElementById("announcer").innerHTML ="Cannot calculate";}
+}
+	
+if ((baros>=11)&&(baros<=20)){
+	if(agereader==1){document.getElementById("announcer").innerHTML ="Dog age: 20";}
+	if(agereader==2){document.getElementById("announcer").innerHTML ="Dog age: 24";}
+	if(agereader==3){document.getElementById("announcer").innerHTML ="Dog age: 29";}
+	if(agereader==4){document.getElementById("announcer").innerHTML ="Dog age: 33";}
+	if(agereader==5){document.getElementById("announcer").innerHTML ="Dog age: 37";}
+	if(agereader==6){document.getElementById("announcer").innerHTML ="Dog age: 42";}
+	if(agereader==7){document.getElementById("announcer").innerHTML ="Dog age: 47";}
+	if(agereader==8){document.getElementById("announcer").innerHTML ="Dog age: 51";}
+	if(agereader==9){document.getElementById("announcer").innerHTML ="Dog age: 56";}
+	if(agereader==10){document.getElementById("announcer").innerHTML ="Dog age: 60";}
+	if(agereader==11){document.getElementById("announcer").innerHTML ="Dog age: 65";}
+	if(agereader==12){document.getElementById("announcer").innerHTML ="Dog age: 69";}
+	if(agereader==13){document.getElementById("announcer").innerHTML ="Dog age: 74";}
+	if(agereader==14){document.getElementById("announcer").innerHTML ="Dog age: 78";}
+	if(agereader==15){document.getElementById("announcer").innerHTML ="Dog age: 83";}
+	if(agereader==16){document.getElementById("announcer").innerHTML ="Dog age: 87";}
+	if(agereader==17){document.getElementById("announcer").innerHTML ="Dog age: 92";}
+	if(agereader==18){document.getElementById("announcer").innerHTML ="Dog age: 96";}
+	if(agereader==19){document.getElementById("announcer").innerHTML ="Dog age: 101";}
+	if(agereader==20){document.getElementById("announcer").innerHTML ="Dog age: 105";}
+	if((agereader<0)||(agereader>20)){document.getElementById("announcer").innerHTML ="Cannot calculate";}
+}
+	
+if ((baros>=21)&&(baros<=40)){
+	if(agereader==1){document.getElementById("announcer").innerHTML ="Dog age: 21";}
+	if(agereader==2){document.getElementById("announcer").innerHTML ="Dog age: 25";}
+	if(agereader==3){document.getElementById("announcer").innerHTML ="Dog age: 30";}
+	if(agereader==4){document.getElementById("announcer").innerHTML ="Dog age: 35";}
+	if(agereader==5){document.getElementById("announcer").innerHTML ="Dog age: 40";}
+	if(agereader==6){document.getElementById("announcer").innerHTML ="Dog age: 45";}
+	if(agereader==7){document.getElementById("announcer").innerHTML ="Dog age: 50";}
+	if(agereader==8){document.getElementById("announcer").innerHTML ="Dog age: 55";}
+	if(agereader==9){document.getElementById("announcer").innerHTML ="Dog age: 61";}
+	if(agereader==10){document.getElementById("announcer").innerHTML ="Dog age: 66";}
+	if(agereader==11){document.getElementById("announcer").innerHTML ="Dog age: 72";}
+	if(agereader==12){document.getElementById("announcer").innerHTML ="Dog age: 77";}
+	if(agereader==13){document.getElementById("announcer").innerHTML ="Dog age: 82";}
+	if(agereader==14){document.getElementById("announcer").innerHTML ="Dog age: 88";}
+	if(agereader==15){document.getElementById("announcer").innerHTML ="Dog age: 93";}
+	if(agereader==16){document.getElementById("announcer").innerHTML ="Dog age: 99";}
+	if(agereader==17){document.getElementById("announcer").innerHTML ="Dog age: 104";}
+	if(agereader==18){document.getElementById("announcer").innerHTML ="Dog age: 109";}
+	if(agereader==19){document.getElementById("announcer").innerHTML ="Dog age: 115";}
+	if(agereader==20){document.getElementById("announcer").innerHTML ="Dog age: 120";}
+	if((agereader<0)||(agereader>20)){document.getElementById("announcer").innerHTML ="Cannot calculate";}
+}
+	
+	if (baros>40){
+	if(agereader==1){document.getElementById("announcer").innerHTML ="Dog age: 22";}
+	if(agereader==2){document.getElementById("announcer").innerHTML ="Dog age: 26";}
+	if(agereader==3){document.getElementById("announcer").innerHTML ="Dog age: 32";}
+	if(agereader==4){document.getElementById("announcer").innerHTML ="Dog age: 38";}
+	if(agereader==5){document.getElementById("announcer").innerHTML ="Dog age: 42";}
+	if(agereader==6){document.getElementById("announcer").innerHTML ="Dog age: 49";}
+	if(agereader==7){document.getElementById("announcer").innerHTML ="Dog age: 56";}
+	if(agereader==8){document.getElementById("announcer").innerHTML ="Dog age: 64";}
+	if(agereader==9){document.getElementById("announcer").innerHTML ="Dog age: 71";}
+	if(agereader==10){document.getElementById("announcer").innerHTML ="Dog age: 78";}
+	if(agereader==11){document.getElementById("announcer").innerHTML ="Dog age: 86";}
+	if(agereader==12){document.getElementById("announcer").innerHTML ="Dog age: 93";}
+	if(agereader==13){document.getElementById("announcer").innerHTML ="Dog age: 101";}
+	if(agereader==14){document.getElementById("announcer").innerHTML ="Dog age: 108";}
+	if(agereader==15){document.getElementById("announcer").innerHTML ="Dog age: 115";}
+	if(agereader==16){document.getElementById("announcer").innerHTML ="Dog age: 123";}
+	if((agereader<0)||(agereader>16)){document.getElementById("announcer").innerHTML ="Cannot calculate";}
+}
+}
+</script>
+
+</body>
+</html>
